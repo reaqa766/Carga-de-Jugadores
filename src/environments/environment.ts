@@ -3,7 +3,15 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  firebase: {
+    apiKey: "AIzaSyDIhX3hCTMVsjyXu333gBK4cMNzGPo-wkc",
+    authDomain: "forma-grandes-ligas.firebaseapp.com",
+    databaseURL: "https://forma-grandes-ligas.firebaseio.com",
+    projectId: "forma-grandes-ligas",
+    storageBucket: "forma-grandes-ligas.appspot.com",
+    messagingSenderId: "151751776743"
+  }
 };
 
 /*

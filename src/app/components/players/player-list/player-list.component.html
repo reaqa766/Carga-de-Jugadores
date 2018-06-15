@@ -1,0 +1,40 @@
+<div class="card">
+  <div class="card-body">
+    <h6 class="text-center">Lista de Jugadores</h6>
+    <table class="table table-sm table-hover">
+      <tbody>
+        <tr>
+          <th>Nombre</th>
+          <th>Apellido</th>
+          <th>VB</th>
+          <th>CA</th>
+          <th>H</th>
+          <th>CE</th>
+          <th>BR</th>
+          <th>Hr</th>
+          <th>Editar</th>
+          <th>Borrar</th>
+        </tr>
+        <tr *ngFor="let player of playerList">
+          <td>{{player.name}}</td>
+          <td>{{player.lastname}}</td>
+          <td>{{player.vecesbate}}</td>
+          <td>{{player.carrerasa}}</td>
+          <td>{{player.hits}}</td>
+          <td>{{player.carrerase}}</td>
+          <td>{{player.basesr}}</td>
+          <td>{{player.homer}}</td>
+          <td><a class="btn btn-secondary text-white" (click)="onEdit(player)">
+            <i class="fas fa-edit"></i>
+          </a></td>
+          <td><a  class="btn btn-danger text-white"  (click)="onDelete(player.$key)">
+            <i class="fas fa-trash-alt"></i>
+          </a></td>
+        
+        
+
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
