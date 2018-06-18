@@ -1,10 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
 // Service
-import { PlayerService } from '../../../services/player.service' 
+import { PlayerService } from '../../../services/player.service';
+
 import { NgForm } from '@angular/forms';
 
-//Player Class
+// Player Class
 import { Player } from '../../../models/player';
 
 @Component({
@@ -23,12 +24,11 @@ export class PlayerComponent implements OnInit {
   }
   onSubmit(playerForm: NgForm) {
     console.log(playerForm.value);
-   if (!playerForm.value.$key){
-     console.log("Insert");
+   if (!playerForm.value.$key) {
+     // console.log( "Insert" );
     this.playerService.insertPlayer(playerForm.value);
-   }
-    else{
-      console.log("Update");
+   } else {
+      // console.log("Update");
       this.playerService.updatePlayer(playerForm.value);
     }
     this.resetForm(playerForm);
@@ -36,9 +36,9 @@ export class PlayerComponent implements OnInit {
 
 
   resetForm(playerForm?: NgForm) {
-    if(playerForm !=null)
-       playerForm.reset();
-       this.playerService.selectedPlayer= new Player();
+  if (playerForm !=null)playerForm.reset();
+
+  this.playerService.selectedPlayer = new Player();
 
   }
 

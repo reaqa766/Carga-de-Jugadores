@@ -27,6 +27,9 @@ import { PlayerComponent } from './components/players/player/player.component';
 // Services
 
 import { PlayerService } from './services/player.service';
+import { PitchersComponent } from './components/pitchers/pitchers.component';
+import { PitcherComponent } from './components/pitchers/pitcher/pitcher.component';
+import { PitcherListComponent } from './components/pitchers/pitcher-list/pitcher-list.component';
 
 
 @NgModule({
@@ -34,7 +37,10 @@ import { PlayerService } from './services/player.service';
     AppComponent,
     PlayersComponent,
     PlayerListComponent,
-    PlayerComponent
+    PlayerComponent,
+    PitchersComponent,
+    PitcherComponent,
+    PitcherListComponent
   ],
   imports: [
     BrowserModule,

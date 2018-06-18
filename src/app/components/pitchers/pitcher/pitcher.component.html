@@ -1,0 +1,121 @@
+<div>
+  <h2 class="my-4 text-center">PITCHERS</h2>
+  </div>
+  <div class="card mt-5">
+    <div class="card-body">
+      <form #pitcherForm="ngForm" (ngSubmit)="onSubmit(pitcherForm)">
+       <input type="hidden" name="$keyP" #$key="ngModel" [(ngModel)]="pitcherService.selectedPitcher.$keyP">
+        <div class="form-group">
+        <input
+        type="text"
+        class="form-control"
+        name="nameP"
+        #nameP="ngModel"
+        [(ngModel)]="pitcherService.selectedPitcher.nameP"
+        placeholder="Pitcher Name"
+
+        >
+      </div>
+       <div class="form-group">
+        <input
+        type="text"
+        class="form-control"
+        name="lastnameP"
+        #lastnameP="ngModel"
+        [(ngModel)]="pitcherService.selectedPitcher.lastnameP"
+        placeholder="LastName"
+
+        >
+      <!-- </div>
+       <div class="form-group">
+        <input
+        type="number"
+        class="form-control"
+        name="avg"
+        #avg="ngModel"
+        [(ngModel)]="plitcherService.selectedPitcher.avg"
+        placeholder="Avg"
+
+        >  -->
+      </div>
+       <div class="form-group">
+        <input
+        type="number"
+        class="form-control"
+        name="InPitch"
+        #InPitch="ngModel"
+        [(ngModel)]="pitcherService.selectedPitcher.InPitch"
+        placeholder="IP"
+
+        >
+      </div>
+       <div class="form-group">
+        <input
+        type="number"
+        class="form-control"
+        name="hitsR"
+        #hitsR="ngModel"
+        [(ngModel)]="pitcherService.selectedPitcher.hitsR"
+        placeholder="H"
+
+        >
+      </div>
+       <div class="form-group">
+        <input
+        type="number"
+        class="form-control"
+        name="CSucias"
+        #CSucias="ngModel"
+        [(ngModel)]="pitcherService.selectedPitcher.CSucias"
+        placeholder="CS"
+
+        >
+      </div>
+       <div class="form-group">
+        <input
+        type="number"
+        class="form-control"
+        name="CLimpias"
+        #CLimpias="ngModel"
+        [(ngModel)]="pitcherService.selectedPitcher.CLimpias"
+        placeholder="CL"
+
+        >
+      </div>
+       <div class="form-group">
+        <input
+        type="number"
+        class="form-control"
+        name="BBPerm"
+        #BBPerm="ngModel"
+        [(ngModel)]="pitcherService.selectedPitcher.BBPerm"
+        placeholder="BB"
+        >
+      </div>
+       <div class="form-group">
+        <input
+        type="number"
+        class="form-control"
+        name="PonchR"
+        #PonchR="ngModel"
+        [(ngModel)]="pitcherService.selectedPitcher.PonchR"
+        placeholder="PO"
+
+        >
+      </div>
+      <div class="form-group">
+        <button class="btn btn-primary" type="submit">
+          <i class="fas fa-plus-circle"></i> Add Pitcher
+        </button>
+       <!--  <div class="container"> -->
+
+        <button class="btn btn-secondary my-2 ml-2" type="reset" (click)="resetForm(pitcherForm)">
+        <i class="fas fa-sync-alt"></i>Reset
+      </button>
+     <!-- </div> -->
+
+      </div>
+
+      </form>
+    </div>
+  </div>

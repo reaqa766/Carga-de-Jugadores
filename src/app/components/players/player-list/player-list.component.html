@@ -1,21 +1,21 @@
 <div class="card mt-5">
   <div class="card-body">
-    <input type="text" class="form-control" (input)="searchPlayer($event.target.value)" placeholder="Filtrar" id="search">
+    <input type="text" class="form-control mb-2" (input)="searchPlayer($event.target.value)" placeholder="Filtrar" id="search">
  <div *ngFor="let name of names">
   <h4>{{player?.name}}</h4>
 
 </div>
-<div *ngIf="aux?.length<1"></div>
+<!-- <div *ngIf="player?.length<1"></div>
 <hr>
 <p>No hay resultado</p>
   </div>
-</div>
+</div> -->
 
 
 
 <div class="card">
   <div class="card-body">
-    <h6 class="text-center">Lista de Jugadores</h6>
+    <h6 class="text-center bg-dark text-white" style="padding-bottom:5px;">Lista de Jugadores</h6>
     <table class="table table-sm table-hover">
       <tbody>
         <tr>
