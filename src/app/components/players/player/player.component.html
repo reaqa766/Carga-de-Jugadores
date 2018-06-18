@@ -3,7 +3,7 @@
     <form #playerForm="ngForm" (ngSubmit)="onSubmit(playerForm)">
      <input type="hidden" name="$key" #$key="ngModel" [(ngModel)]="playerService.selectedPlayer.$key">
       <div class="form-group">
-      <input 
+      <input
       type="text"
       class="form-control"
       name="name"
@@ -11,10 +11,10 @@
       [(ngModel)]="playerService.selectedPlayer.name"
       placeholder="Player Name"
 
-      > 
+      >
     </div>
      <div class="form-group">
-      <input 
+      <input
       type="text"
       class="form-control"
       name="lastname"
@@ -22,10 +22,10 @@
       [(ngModel)]="playerService.selectedPlayer.lastname"
       placeholder="LastName"
 
-      > 
+      >
     <!-- </div>
      <div class="form-group">
-      <input 
+      <input
       type="number"
       class="form-control"
       name="avg"
@@ -36,7 +36,7 @@
       >  -->
     </div>
      <div class="form-group">
-      <input 
+      <input
       type="number"
       class="form-control"
       name="vecesbate"
@@ -44,10 +44,10 @@
       [(ngModel)]="playerService.selectedPlayer.vecesbate"
       placeholder="VB"
 
-      > 
+      >
     </div>
      <div class="form-group">
-      <input 
+      <input
       type="number"
       class="form-control"
       name="carrerasa"
@@ -55,10 +55,10 @@
       [(ngModel)]="playerService.selectedPlayer.carrerasa"
       placeholder="CA"
 
-      > 
+      >
     </div>
      <div class="form-group">
-      <input 
+      <input
       type="number"
       class="form-control"
       name="hits"
@@ -66,10 +66,10 @@
       [(ngModel)]="playerService.selectedPlayer.hits"
       placeholder="H"
 
-      > 
+      >
     </div>
      <div class="form-group">
-      <input 
+      <input
       type="number"
       class="form-control"
       name="carrerase"
@@ -77,20 +77,20 @@
       [(ngModel)]="playerService.selectedPlayer.carrerase"
       placeholder="CE"
 
-      > 
+      >
     </div>
      <div class="form-group">
-      <input 
+      <input
       type="number"
       class="form-control"
       name="basesr"
       #basesr="ngModel"
       [(ngModel)]="playerService.selectedPlayer.basesr"
       placeholder="BR"
-      > 
+      >
     </div>
      <div class="form-group">
-      <input 
+      <input
       type="number"
       class="form-control"
       name="homer"
@@ -98,7 +98,7 @@
       [(ngModel)]="playerService.selectedPlayer.homer"
       placeholder="HR"
 
-      > 
+      >
     </div>
     <div class="form-group">
       <button class="btn btn-primary" type="submit">
@@ -106,13 +106,13 @@
       </button>
       <div class="container">
 
-      <button class="btn btn-secondary my-2" type="reset" (click)="resetForm(playerForm)"> 
+      <button class="btn btn-secondary my-2" type="reset" (click)="resetForm(playerForm)">
       <i class="fas fa-sync-alt"></i>Reset
     </button>
   </div>
 
     </div>
 
-    </form> 
+    </form>
   </div>
 </div>

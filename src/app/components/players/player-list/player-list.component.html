@@ -1,3 +1,18 @@
+<div class="card mt-5">
+  <div class="card-body">
+    <input type="text" class="form-control" (input)="searchPlayer($event.target.value)" placeholder="Filtrar" id="search">
+ <div *ngFor="let name of names">
+  <h4>{{player?.name}}</h4>
+
+</div>
+<div *ngIf="aux?.length<1"></div>
+<hr>
+<p>No hay resultado</p>
+  </div>
+</div>
+
+
+
 <div class="card">
   <div class="card-body">
     <h6 class="text-center">Lista de Jugadores</h6>
@@ -30,8 +45,8 @@
           <td><a  class="btn btn-danger text-white"  (click)="onDelete(player.$key)">
             <i class="fas fa-trash-alt"></i>
           </a></td>
-        
-        
+
+
 
         </tr>
       </tbody>

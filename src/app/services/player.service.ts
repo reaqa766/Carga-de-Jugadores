@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 
-import { AngularFireDatabase, AngularFireList } from 'angularfire2/database'
+import { AngularFireDatabase, AngularFireList } from 'angularfire2/database';
 
 import { Player} from '../models/player';
 
@@ -14,47 +14,48 @@ export class PlayerService {
 
   constructor(private firebase: AngularFireDatabase) { }
 
-getPlayers()
-{
+getPlayers() {
   this.playerList = this.firebase.list('players');
   return this.playerList;
 }
 
-insertPlayer(player: Player) 
-{
+
+
+
+
+insertPlayer(player: Player) {
   this.playerList.push({
     name: player.name,
     lastname: player.lastname,
-    //average: player.avg,
+    // average: player.avg,
     vecesbate: player.vecesbate,
     carrerasa: player.carrerasa,
     hits: player.hits,
     carrerase: player.carrerase,
     basesr: player.basesr,
-    homer: player.homer   
-  })
+    homer: player.homer
+  });
 
 }
 
-updatePlayer(player: Player){
+updatePlayer(player: Player) {
 this.playerList.update(player.$key, {
- name: player.name,
+    name: player.name,
     lastname: player.lastname,
-    //average: player.avg,
+    // average: player.avg,
     vecesbate: player.vecesbate,
     carrerasa: player.carrerasa,
     hits: player.hits,
     carrerase: player.carrerase,
     basesr: player.basesr,
-    homer: player.homer   
- 
+    homer: player.homer
 
-})
+
+});
 
 }
 
-deletePlayer(name: string)
-{
+deletePlayer(name: string) {
   this.playerList.remove(name);
 }
 
