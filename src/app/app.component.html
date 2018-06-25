@@ -1,13 +1,26 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <nav class="navbar navbar-dark bg-dark">
-  <a href="/" class="navbar-brand">
-  Players Daily</a>
 
-  <a href="/" class="navbar-header text-white">
+
+  <a routerLink="" class="navbar-brand">
+  Home</a>
+
+  <a routerLink="/players" class="navbar-brand">
+    Players Daily</a>
+  
+
+
+
+  <a routerLink="/p-season" class="navbar-header text-white">
   Players Season</a>
 </nav>
 
-<app-players></app-players>
+
+<!-- <h1 class="text-center">Modulo Para Carga</h1> -->
+
+<!-- <app-players></app-players> -->
+
+<router-outlet></router-outlet>
 
 
 

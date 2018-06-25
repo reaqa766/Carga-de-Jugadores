@@ -1,6 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+import { AppRoutingModule, routingComponents } from './app-routing/app-routing.module';
+
 
 import { FormsModule } from '@angular/forms';
 
@@ -30,17 +32,20 @@ import { PlayerService } from './services/player.service';
 import { PitchersComponent } from './components/pitchers/pitchers.component';
 import { PitcherComponent } from './components/pitchers/pitcher/pitcher.component';
 import { PitcherListComponent } from './components/pitchers/pitcher-list/pitcher-list.component';
+// import { DashboardComponent } from './dashboard/dashboard.component';
+// import { PSeasonComponent } from './p-season/p-season.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    PlayersComponent,
+    // PlayersComponent,
     PlayerListComponent,
     PlayerComponent,
     PitchersComponent,
     PitcherComponent,
-    PitcherListComponent
+    PitcherListComponent,
+    routingComponents
   ],
   imports: [
     BrowserModule,
@@ -49,7 +54,8 @@ import { PitcherListComponent } from './components/pitchers/pitcher-list/pitcher
     FormsModule,
     ToastrModule.forRoot(),
     CommonModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    AppRoutingModule
     
 
   ],
