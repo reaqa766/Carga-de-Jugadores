@@ -8,4 +8,15 @@ export class Pitcher {
  CLimpias?: number;
  BBPerm?: number;
  PonchR?: number;
+
+//  namePse?: string;
+//  lastnamePse?: string;
+ $keyPse?: string;
+ InPitchse?: number;
+ hitsRse?: number;
+ CSuciasse?: number;
+ CLimpiasse?: number;
+ BBPermse?: number;
+ PonchRse?: number;
+
 }

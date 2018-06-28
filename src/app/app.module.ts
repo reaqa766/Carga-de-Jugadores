@@ -32,6 +32,10 @@ import { PlayerService } from './services/player.service';
 import { PitchersComponent } from './components/pitchers/pitchers.component';
 import { PitcherComponent } from './components/pitchers/pitcher/pitcher.component';
 import { PitcherListComponent } from './components/pitchers/pitcher-list/pitcher-list.component';
+import { PlayerseComponent } from './components/playerse/playerse.component';
+import { PlayerseListComponent } from './components/playerse-list/playerse-list.component';
+import { PitcherseComponent } from './components/pitcherse/pitcherse.component';
+import { PitcherseListComponent } from './components/pitcherse-list/pitcherse-list.component';
 // import { DashboardComponent } from './dashboard/dashboard.component';
 // import { PSeasonComponent } from './p-season/p-season.component';
 
@@ -45,7 +49,11 @@ import { PitcherListComponent } from './components/pitchers/pitcher-list/pitcher
     PitchersComponent,
     PitcherComponent,
     PitcherListComponent,
-    routingComponents
+    routingComponents,
+    PlayerseComponent,
+    PlayerseListComponent,
+    PitcherseComponent,
+    PitcherseListComponent
   ],
   imports: [
     BrowserModule,

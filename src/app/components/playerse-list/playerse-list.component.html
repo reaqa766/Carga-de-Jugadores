@@ -1,0 +1,56 @@
+<div class="card mt-5">
+    <div class="card-body">
+      <input type="text" class="form-control mb-2" (input)="searchPlayer($event.target.value)" placeholder="Filtrar" id="search">
+   <div *ngFor="let name of names">
+    <h4>{{player?.name}}</h4>
+  
+  </div>
+  <!-- <div *ngIf="player?.length<1"></div>
+  <hr>
+  <p>No hay resultado</p>
+    </div>
+  </div> -->
+  
+  
+  
+  <div class="card">
+    <div class="card-body">
+      <h6 class="text-center bg-dark text-white" style="padding-bottom:5px;">Lista de Jugadores</h6>
+      <table class="table table-sm table-hover">
+        <tbody>
+          <tr>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>VB</th>
+            <th>CA</th>
+            <th>H</th>
+            <th>CE</th>
+            <th>BR</th>
+            <th>Hr</th>
+            <th>Editar</th>
+            <th>Borrar</th>
+          </tr>
+          <tr *ngFor="let player of playerList">
+            <td>{{player.namese}}</td>
+            <td>{{player.lastnamese}}</td>
+            <td>{{player.vecesbatese}}</td>
+            <td>{{player.carrerasase}}</td>
+            <td>{{player.hitsse}}</td>
+            <td>{{player.carrerasese}}</td>
+            <td>{{player.basesrse}}</td>
+            <td>{{player.homerse}}</td>
+            <td><a class="btn btn-secondary text-white" (click)="onEdit(player)">
+              <i class="fas fa-edit"></i>
+            </a></td>
+            <td><a  class="btn btn-danger text-white"  (click)="onDelete(player.$key)">
+              <i class="fas fa-trash-alt"></i>
+            </a></td>
+  
+  
+  
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  

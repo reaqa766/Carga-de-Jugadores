@@ -1,0 +1,116 @@
+<!-- h2 class="my-4 text-center mt-2">PITCHERS</h2> -->
+
+<div class="card mt-5">
+  <div class="card-body">
+    <form #playerForm="ngForm" (ngSubmit)="onSubmit(playerForm)">
+     <input type="hidden" name="$key" #$keyP="ngModel" [(ngModel)]="playerService.selectedPlayer.$keyP">
+      <div class="form-group">
+      <input
+      type="text"
+      class="form-control"
+      name="nameP"
+      #name="ngModel"
+      [(ngModel)]="playerService.selectedPlayer.nameP"
+      placeholder="Player Name"
+
+      >
+    </div>
+     <div class="form-group">
+      <input
+      type="text"
+      class="form-control"
+      name="lastnameP"
+      #lastname="ngModel"
+      [(ngModel)]="playerService.selectedPlayer.lastnameP"
+      placeholder="LastName"
+
+      >
+    <!-- </div>
+     <div class="form-group">
+      <input
+      type="number"
+      class="form-control"
+      name="avg"
+      #avg="ngModel"
+      [(ngModel)]="playerService.selectedPlayer.avg"
+      placeholder="Avg"
+
+      >  -->
+    </div>
+     <div class="form-group">
+      <input
+      type="number"
+      class="form-control"
+      name="InPitchse"
+      #InPitch="ngModel"
+      [(ngModel)]="playerService.selectedPlayer.InPitchse"
+      placeholder="IP"
+
+      >
+    </div>
+     <div class="form-group">
+      <input
+      type="number"
+      class="form-control"
+      name="hitsRse"
+      #hitsR="ngModel"
+      [(ngModel)]="playerService.selectedPlayer.hitsRse"
+      placeholder="H"
+
+      >
+    </div>
+     <div class="form-group">
+      <input
+      type="number"
+      class="form-control"
+      name="CSuciasse"
+      #CSucias="ngModel"
+      [(ngModel)]="playerService.selectedPlayer.CSuciasse"
+      placeholder="CS"
+
+      >
+    </div>
+     <div class="form-group">
+      <input
+      type="number"
+      class="form-control"
+      name="CLimpiasse"
+      #CLimpias="ngModel"
+      [(ngModel)]="playerService.selectedPlayer.CLimpiasse"
+      placeholder="CL"
+
+      >
+    </div>
+     <div class="form-group">
+      <input
+      type="number"
+      class="form-control"
+      name="BBPermse"
+      #BBPerm="ngModel"
+      [(ngModel)]="playerService.selectedPlayer.BBPermse"
+      placeholder="BB"
+      >
+    </div>
+     <div class="form-group">
+      <input
+      type="number"
+      class="form-control"
+      name="PonchRse"
+      #PonchR="ngModel"
+      [(ngModel)]="playerService.selectedPlayer.PonchRse"
+      placeholder="PO"
+
+      >
+    </div>
+    <div class="form-group">
+      <button class="btn btn-primary" type="submit">
+        <i class="fas fa-plus-circle"></i> Add Pitcher
+      </button>
+      <button class="btn btn-secondary my-2" type="reset" (click)="resetForm(playerForm)">
+        <i class="fas fa-sync-alt"></i>Reset
+      </button>
+    </div>
+
+    </form>
+    </div>
+    </div>

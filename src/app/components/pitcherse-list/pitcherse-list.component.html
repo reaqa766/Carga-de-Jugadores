@@ -1,0 +1,53 @@
+<div class="card mt-5">
+  <div class="card-body">
+    <input type="text" class="form-control  mb-2" (input)="searchPitcher($event.target.value)" placeholder="Filtrar" id="search">
+ <div *ngFor="let name of names">
+  <h4>{{player?.name}}</h4>
+
+</div>
+<!-- <div *ngIf="player?.length<1"></div>
+<hr>
+<p>No hay resultado</p>
+  </div>
+</div> -->
+
+<div class="card">
+  <div class="card-body">
+    <h6 class="text-center bg-dark text-white" style="padding-bottom:5px;">Lista de Pitchers</h6>
+    <table class="table table-sm table-hover">
+      <tbody>
+        <tr>
+          <th>N</th>
+          <th>Ap</th>
+          <th>IP</th>
+          <th>H</th>
+          <th>CS</th>
+          <th>CL</th>
+          <th>BB</th>
+          <th>PO</th>
+          <th>Ed</th>
+          <th>Bor</th>
+        </tr>
+        <tr *ngFor="let pitcher of pitcherList">
+          <td>{{pitcher.nameP}}</td>
+          <td>{{pitcher.lastnameP}}</td>
+          <td>{{pitcher.InPitchse}}</td>
+          <td>{{pitcher.hitsRse}}</td>
+          <td>{{pitcher.CSuciasse}}</td>
+          <td>{{pitcher.CLimpiasse}}</td>
+          <td>{{pitcher.BBPermse}}</td>
+          <td>{{pitcher.PonchRse}}</td>
+          <td><a class="btn btn-secondary text-white" (click)="onEdit(pitcher)">
+            <i class="fas fa-edit"></i>
+          </a></td>
+          <td><a  class="btn btn-danger text-white"  (click)="onDelete(pitcher.$keyP)">
+            <i class="fas fa-trash-alt"></i>
+          </a></td>
+
+
+
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

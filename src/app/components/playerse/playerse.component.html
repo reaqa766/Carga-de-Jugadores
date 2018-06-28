@@ -1,0 +1,119 @@
+<div class="card mt-5">
+    <div class="card-body">
+      <form #playerForm="ngForm" (ngSubmit)="onSubmit(playerForm)">
+       <input type="hidden" name="$key" #$key="ngModel" [(ngModel)]="playerService.selectedPlayer.$key">
+        <div class="form-group">
+        <input
+        type="text"
+        class="form-control"
+        name="name"
+        #name="ngModel"
+        [(ngModel)]="playerService.selectedPlayer.name"
+        placeholder="Player Name"
+  
+        >
+      </div>
+       <div class="form-group">
+        <input
+        type="text"
+        class="form-control"
+        name="lastname"
+        #lastname="ngModel"
+        [(ngModel)]="playerService.selectedPlayer.lastname"
+        placeholder="LastName"
+  
+        >
+      <!-- </div>
+       <div class="form-group">
+        <input
+        type="number"
+        class="form-control"
+        name="avg"
+        #avg="ngModel"
+        [(ngModel)]="playerService.selectedPlayer.avg"
+        placeholder="Avg"
+  
+        >  -->
+      </div>
+       <div class="form-group">
+        <input
+        type="number"
+        class="form-control"
+        name="vecesbatese"
+        #vecesbate="ngModel"
+        [(ngModel)]="playerseService.selectedPlayer.vecesbatese"
+        placeholder="VB"
+  
+        >
+      </div>
+       <div class="form-group">
+        <input
+        type="number"
+        class="form-control"
+        name="carrerasase"
+        #carrerasa="ngModel"
+        [(ngModel)]="playerseService.selectedPlayer.carrerasase"
+        placeholder="CA"
+  
+        >
+      </div>
+       <div class="form-group">
+        <input
+        type="number"
+        class="form-control"
+        name="hitsse"
+        #hits="ngModel"
+        [(ngModel)]="playerseService.selectedPlayer.hitsse"
+        placeholder="H"
+  
+        >
+      </div>
+       <div class="form-group">
+        <input
+        type="number"
+        class="form-control"
+        name="carrerasese"
+        #carrerase="ngModel"
+        [(ngModel)]="playerseService.selectedPlayer.carrerasese"
+        placeholder="CE"
+  
+        >
+      </div>
+       <div class="form-group">
+        <input
+        type="number"
+        class="form-control"
+        name="basesrse"
+        #basesr="ngModel"
+        [(ngModel)]="playerseService.selectedPlayer.basesrse"
+        placeholder="BR"
+        >
+      </div>
+       <div class="form-group">
+        <input
+        type="number"
+        class="form-control"
+        name="homerse"
+        #homer="ngModel"
+        [(ngModel)]="playerseService.selectedPlayer.homerse"
+        placeholder="HR"
+  
+        >
+      </div>
+      <div class="form-group">
+        <button class="btn btn-primary" type="submit">
+          <i class="fas fa-plus-circle"></i> Add Player
+        </button>
+        <!-- <div class="container"> -->
+  
+        <button class="btn btn-secondary my-2 ml-2" type="reset" (click)="resetForm(playerForm)">
+        <i class="fas fa-sync-alt"></i>Reset
+      </button>
+     <!-- </div> -->
+  
+      </div>
+  
+      </form>
+    </div>
+  </div>
+  
