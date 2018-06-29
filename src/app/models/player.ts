@@ -17,20 +17,12 @@ export class Player {
    CLimpias?: number;
    BBPerm?: number;
    PonchR?: number;
-
-
-  //  namese?: string;
-  //  lastnamese?: string;
-  //  namePse?: string;
-  //  lastnamePse?: string;
-  // avg: number;
   vecesbatese?: number;
   carrerasase?: number;
   hitsse?: number;
   carrerasese?: number;
   basesrse?: number;
   homerse?: number;
-  // $keyse?: string;
   InPitchse?: number;
   hitsRse?: number;
   CSuciasse?: number;

@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 // Service
-import { PitcherService } from '../../services/pitcher.service';
+import { PitcherseService } from '../../services/pitcherse.service';
 
 
 import { NgForm } from '@angular/forms';
@@ -19,10 +19,10 @@ import { Pitcher } from '../../models/pitcher';
 })
 export class PitcherseComponent implements OnInit {
 
-  constructor(private pitcherService: PitcherService) { }
+  constructor(private pitcherseService: PitcherseService) { }
 
   ngOnInit() {
-    this.pitcherService.getPitchers();
+    this.pitcherseService.getPitchers();
     this.resetForm();
 
   }
@@ -30,10 +30,10 @@ export class PitcherseComponent implements OnInit {
     console.log(pitcherForm.value);
    if (!pitcherForm.value.$keyP) {
      // console.log( "Insert" );
-    this.pitcherService.insertPitcher(pitcherForm.value);
+    this.pitcherseService.insertPitcher(pitcherForm.value);
    } else {
       // console.log("Update");
-      this.pitcherService.updatePitcher(pitcherForm.value);
+      this.pitcherseService.updatePitcher(pitcherForm.value);
     }
     this.resetForm(pitcherForm);
 }
@@ -41,7 +41,7 @@ export class PitcherseComponent implements OnInit {
 
   resetForm(pitcherForm?: NgForm) { if (pitcherForm != null)pitcherForm.reset();
 
-  this.pitcherService.selectedPitcher = new Pitcher();
+  this.pitcherseService.selectedPitcher = new Pitcher();
 
   }
 

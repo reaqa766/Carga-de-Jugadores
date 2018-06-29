@@ -31,6 +31,7 @@
           <th>Borrar</th>
         </tr>
         <tr *ngFor="let player of playerList">
+            <ng-container *ngIf="player.vecesbate">
           <td>{{player.name}}</td>
           <td>{{player.lastname}}</td>
           <td>{{player.vecesbate}}</td>
@@ -47,7 +48,8 @@
           </a></td>
 
 
-
+  
+        </ng-container>
         </tr>
       </tbody>
     </table>

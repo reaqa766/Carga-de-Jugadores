@@ -27,21 +27,21 @@ insertPlayer(player: Player) {
   this.playerList.push({
     name: player.name,
     lastname: player.lastname,
-    nameP: player.nameP,
-    lastnameP: player.lastnameP,
+    // nameP: player.nameP,
+    // lastnameP: player.lastnameP,
     // average: player.avg,
-    vecesbate: player.vecesbatese,
-    carrerasa: player.carrerasase,
-    hits: player.hitsse,
-    carrerase: player.carrerasese,
-    basesr: player.basesrse,
-    homer: player.homerse,
-    InPitch: player.InPitchse,
-    hitsR: player.hitsRse,
-    CSucias: player.CSuciasse,
-    CLimpias: player.CLimpiasse,
-    BBPerm: player.BBPermse,
-    PonchR: player.PonchRse
+    vecesbatese: player.vecesbatese,
+    carrerasase: player.carrerasase,
+    hitsse: player.hitsse,
+    carrerasese: player.carrerasese,
+    basesrse: player.basesrse,
+    homerse: player.homerse,
+    // InPitchse: player.InPitchse,
+    // hitsRse: player.hitsRse,
+    // CSuciasse: play  er.CSuciasse,
+    // CLimpiasse: player.CLimpiasse,
+    // BBPermse: player.BBPermse,
+    // PonchRse: player.PonchRse
 
 
 
@@ -59,12 +59,12 @@ this.playerList.update(player.$key, {
     name: player.name,
     lastname: player.lastname,
     // average: player.avg,
-    vecesbate: player.vecesbatese,
-    carrerasa: player.carrerasase,
-    hits: player.hitsse,
-    carrerase: player.carrerasese,
-    basesr: player.basesrse,
-    homer: player.homerse
+    vecesbatese: player.vecesbatese,
+    carrerasase: player.carrerasase,
+    hitsse: player.hitsse,
+    carrerasese: player.carrerasese,
+    basesrse: player.basesrse,
+    homerse: player.homerse
 
 
 });
@@ -76,5 +76,16 @@ deletePlayer(name: string) {
 }
 
 
+test(t) {      //defining a function
+  if (t === undefined) {       //if t=undefined, call tt
+        console.log(t)      //call t
+  }
+  return t;    
 }
+
+
+
+}
+
+
 

@@ -3,14 +3,14 @@
 <div class="card mt-5">
   <div class="card-body">
     <form #playerForm="ngForm" (ngSubmit)="onSubmit(playerForm)">
-     <input type="hidden" name="$key" #$keyP="ngModel" [(ngModel)]="playerService.selectedPlayer.$keyP">
+     <input type="hidden" name="$key" #$keyP="ngModel" [(ngModel)]="pitcherseService.selectedPitcher.$keyP">
       <div class="form-group">
       <input
       type="text"
       class="form-control"
       name="nameP"
       #name="ngModel"
-      [(ngModel)]="playerService.selectedPlayer.nameP"
+      [(ngModel)]="pitcherseService.selectedPitcher.nameP"
       placeholder="Player Name"
 
       >
@@ -21,7 +21,7 @@
       class="form-control"
       name="lastnameP"
       #lastname="ngModel"
-      [(ngModel)]="playerService.selectedPlayer.lastnameP"
+      [(ngModel)]="pitcherseService.selectedPitcher.lastnameP"
       placeholder="LastName"
 
       >
@@ -32,7 +32,7 @@
       class="form-control"
       name="avg"
       #avg="ngModel"
-      [(ngModel)]="playerService.selectedPlayer.avg"
+      [(ngModel)]="pitcherseService.selectedPitcher.avg"
       placeholder="Avg"
 
       >  -->
@@ -43,7 +43,7 @@
       class="form-control"
       name="InPitchse"
       #InPitch="ngModel"
-      [(ngModel)]="playerService.selectedPlayer.InPitchse"
+      [(ngModel)]="pitcherseService.selectedPitcher.InPitchse"
       placeholder="IP"
 
       >
@@ -54,7 +54,7 @@
       class="form-control"
       name="hitsRse"
       #hitsR="ngModel"
-      [(ngModel)]="playerService.selectedPlayer.hitsRse"
+      [(ngModel)]="pitcherseService.selectedPitcher.hitsRse"
       placeholder="H"
 
       >
@@ -65,7 +65,7 @@
       class="form-control"
       name="CSuciasse"
       #CSucias="ngModel"
-      [(ngModel)]="playerService.selectedPlayer.CSuciasse"
+      [(ngModel)]="pitcherseService.selectedPitcher.CSuciasse"
       placeholder="CS"
 
       >
@@ -76,7 +76,7 @@
       class="form-control"
       name="CLimpiasse"
       #CLimpias="ngModel"
-      [(ngModel)]="playerService.selectedPlayer.CLimpiasse"
+      [(ngModel)]="pitcherseService.selectedPitcher.CLimpiasse"
       placeholder="CL"
 
       >
@@ -87,7 +87,7 @@
       class="form-control"
       name="BBPermse"
       #BBPerm="ngModel"
-      [(ngModel)]="playerService.selectedPlayer.BBPermse"
+      [(ngModel)]="pitcherseService.selectedPitcher.BBPermse"
       placeholder="BB"
       >
     </div>
@@ -97,7 +97,7 @@
       class="form-control"
       name="PonchRse"
       #PonchR="ngModel"
-      [(ngModel)]="playerService.selectedPlayer.PonchRse"
+      [(ngModel)]="pitcherseService.selectedPitcher.PonchRse"
       placeholder="PO"
 
       >

@@ -30,9 +30,10 @@
             <th>Editar</th>
             <th>Borrar</th>
           </tr>
-          <tr *ngFor="let player of playerList">
-            <td>{{player.namese}}</td>
-            <td>{{player.lastnamese}}</td>
+          <tr *ngFor="let player of playerList" >
+            <ng-container *ngIf="player.vecesbatese">
+            <td>{{player.name}}</td>
+            <td>{{player.lastname}}</td>
             <td>{{player.vecesbatese}}</td>
             <td>{{player.carrerasase}}</td>
             <td>{{player.hitsse}}</td>
@@ -47,7 +48,7 @@
             </a></td>
   
   
-  
+          </ng-container>
           </tr>
         </tbody>
       </table>

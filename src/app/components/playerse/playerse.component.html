@@ -1,15 +1,15 @@
 <div class="card mt-5">
     <div class="card-body">
       <form #playerForm="ngForm" (ngSubmit)="onSubmit(playerForm)">
-       <input type="hidden" name="$key" #$key="ngModel" [(ngModel)]="playerService.selectedPlayer.$key">
+       <input type="hidden" name="$key" #$key="ngModel" [(ngModel)]="playerseService.selectedPlayer.$key">
         <div class="form-group">
         <input
         type="text"
         class="form-control"
         name="name"
         #name="ngModel"
-        [(ngModel)]="playerService.selectedPlayer.name"
-        placeholder="Player Name"
+        [(ngModel)]="playerseService.selectedPlayer.name"
+        placeholder="Player Name sdasd"
   
         >
       </div>
@@ -19,7 +19,7 @@
         class="form-control"
         name="lastname"
         #lastname="ngModel"
-        [(ngModel)]="playerService.selectedPlayer.lastname"
+        [(ngModel)]="playerseService.selectedPlayer.lastname"
         placeholder="LastName"
   
         >
@@ -30,7 +30,7 @@
         class="form-control"
         name="avg"
         #avg="ngModel"
-        [(ngModel)]="playerService.selectedPlayer.avg"
+        [(ngModel)]="playerseService.selectedPlayer.avg"
         placeholder="Avg"
   
         >  -->
@@ -110,7 +110,6 @@
         <i class="fas fa-sync-alt"></i>Reset
       </button>
      <!-- </div> -->
-  
       </div>
   
       </form>

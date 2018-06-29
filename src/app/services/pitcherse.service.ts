@@ -26,12 +26,12 @@ insertPitcher(pitcher: Pitcher) {
   this.pitcherList.push({
     nameP: pitcher.nameP,
     lastnameP: pitcher.lastnameP,
-    InPitch: pitcher.InPitchse,
-    hitsR: pitcher.hitsRse,
-    CSucias: pitcher.CSuciasse,
-    CLimpias: pitcher.CLimpiasse,
-    BBPerm: pitcher.BBPermse,
-    PonchR: pitcher.PonchRse
+    InPitchse: pitcher.InPitchse,
+    hitsRse: pitcher.hitsRse,
+    CSuciasse: pitcher.CSuciasse,
+    CLimpiasse: pitcher.CLimpiasse,
+    BBPermse: pitcher.BBPermse,
+    PonchRse: pitcher.PonchRse
 
 
 
