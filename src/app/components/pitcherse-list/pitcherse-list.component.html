@@ -20,6 +20,7 @@
           <th>N</th>
           <th>Ap</th>
           <th>IP</th>
+          <th>EF</th>
           <th>H</th>
           <th>CS</th>
           <th>CL</th>
@@ -29,9 +30,11 @@
           <th>Bor</th>
         </tr>
         <tr *ngFor="let pitcher of pitcherList">
+       <ng-container *ngIf="pitcher.InPitchse">
           <td>{{pitcher.nameP}}</td>
           <td>{{pitcher.lastnameP}}</td>
           <td>{{pitcher.InPitchse}}</td>
+          <td>{{pitcher.efectse*9}}</td>
           <td>{{pitcher.hitsRse}}</td>
           <td>{{pitcher.CSuciasse}}</td>
           <td>{{pitcher.CLimpiasse}}</td>
@@ -44,7 +47,7 @@
             <i class="fas fa-trash-alt"></i>
           </a></td>
 
-
+        </ng-container>
 
         </tr>
       </tbody>

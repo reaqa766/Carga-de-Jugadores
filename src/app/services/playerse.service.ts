@@ -31,6 +31,7 @@ insertPlayer(player: Player) {
     // lastnameP: player.lastnameP,
     // average: player.avg,
     vecesbatese: player.vecesbatese,
+    avgse: player.avgse,
     carrerasase: player.carrerasase,
     hitsse: player.hitsse,
     carrerasese: player.carrerasese,
@@ -60,6 +61,7 @@ this.playerList.update(player.$key, {
     lastname: player.lastname,
     // average: player.avg,
     vecesbatese: player.vecesbatese,
+    avgse: player.avgse,
     carrerasase: player.carrerasase,
     hitsse: player.hitsse,
     carrerasese: player.carrerasese,
@@ -76,11 +78,11 @@ deletePlayer(name: string) {
 }
 
 
-test(t) {      //defining a function
-  if (t === undefined) {       //if t=undefined, call tt
-        console.log(t)      //call t
+test(t) {      // defining a function
+  if (t === undefined) {       // if t=undefined, call tt
+        console.log(t);  // call t
   }
-  return t;    
+  return t;
 }
 
 

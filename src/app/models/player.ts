@@ -18,6 +18,7 @@ export class Player {
    BBPerm?: number;
    PonchR?: number;
   vecesbatese?: number;
+  avgse?: number;
   carrerasase?: number;
   hitsse?: number;
   carrerasese?: number;

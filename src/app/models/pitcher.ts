@@ -9,9 +9,7 @@ export class Pitcher {
  BBPerm?: number;
  PonchR?: number;
 
-//  namePse?: string;
-//  lastnamePse?: string;
- $keyPse?: string;
+ efectse?: number;
  InPitchse?: number;
  hitsRse?: number;
  CSuciasse?: number;

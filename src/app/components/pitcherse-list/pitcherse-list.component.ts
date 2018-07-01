@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 // Service
 
-import { PitcherService } from '../../services/pitcher.service';
+import { PitcherseService } from '../../services/pitcherse.service';
 
 import { ToastrService } from 'ngx-toastr';
 // import { Subject } from 'rxjs/Subject';
@@ -31,13 +31,13 @@ export class PitcherseListComponent implements OnInit {
 
 
   constructor(
-    private pitcherService: PitcherService,
+    private pitcherseService: PitcherseService,
     private toastr: ToastrService
   ) { }
 
   ngOnInit() {
 
-    this.pitcherService.getPitchers()
+    this.pitcherseService.getPitchers()
         .snapshotChanges()
         .subscribe(item => {
           this.pitcherList = [];
@@ -45,21 +45,24 @@ export class PitcherseListComponent implements OnInit {
           item.forEach(element => {
             const x = element.payload.toJSON();
             x['$keyP'] = element.key;
+           // console.log(x);
             this.pitcherListOriginal.push(x as Pitcher);
           });
           this.pitcherList = this.pitcherListOriginal;
+          // console.log(this.pitcherList);
           // this.playerService.getPlayerFilter(this.startAt, this.endAt)
           // .subscribe(players => this.players = players)
  });
   }
 
   onEdit(pitcher: Pitcher) {
-    this.pitcherService.selectedPitcher = Object.assign({}, pitcher);
+    this.pitcherseService.selectedPitcher = Object.assign({}, pitcher);
+    // console.log(this.pitcherseService.selectedPitcher);
   }
 
   onDelete($keyP: string) {
 
-    this.pitcherService.deletePitcher($keyP);
+    this.pitcherseService.deletePitcher($keyP);
     // this.toastr.success('Operacion Realizada', 'Jugador Eliminado');
 
   }

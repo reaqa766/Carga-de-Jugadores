@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 // Service
 
-import { PlayerService } from '../../services/player.service';
+import { PlayerseService } from '../../services/playerse.service';
 
 import { ToastrService } from 'ngx-toastr';
 // import { Subject } from 'rxjs/Subject';
@@ -30,13 +30,13 @@ export class PlayerseListComponent implements OnInit {
 
 
   constructor(
-    private playerService: PlayerService,
+    private playerseService: PlayerseService,
     private toastr: ToastrService
   ) { }
 
   ngOnInit() {
 
-    this.playerService.getPlayers()
+    this.playerseService.getPlayers()
         .snapshotChanges()
         .subscribe(item => {
           this.playerList = [];
@@ -53,12 +53,12 @@ export class PlayerseListComponent implements OnInit {
   }
 
   onEdit(player: Player) {
-    this.playerService.selectedPlayer = Object.assign({}, player);
+    this.playerseService.selectedPlayer = Object.assign({}, player);
   }
 
   onDelete($key: string) {
 
-    this.playerService.deletePlayer($key);
+    this.playerseService.deletePlayer($key);
     // this.toastr.success('Operacion Realizada', 'Jugador Eliminado');
 
   }

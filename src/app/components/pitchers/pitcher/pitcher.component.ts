@@ -30,6 +30,7 @@ export class PitcherComponent implements OnInit {
    if (!pitcherForm.value.$keyP) {
      // console.log( "Insert" );
     this.pitcherService.insertPitcher(pitcherForm.value);
+    this.pitcherService.updatePitcher(pitcherForm.value.efectse)
    } else {
       // console.log("Update");
       this.pitcherService.updatePitcher(pitcherForm.value);
@@ -43,5 +44,5 @@ export class PitcherComponent implements OnInit {
   this.pitcherService.selectedPitcher = new Pitcher();
 
   }
-
 }
+

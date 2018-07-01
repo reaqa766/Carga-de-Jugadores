@@ -27,6 +27,7 @@ insertPitcher(pitcher: Pitcher) {
     nameP: pitcher.nameP,
     lastnameP: pitcher.lastnameP,
     InPitchse: pitcher.InPitchse,
+    efectse: pitcher.efectse,
     hitsRse: pitcher.hitsRse,
     CSuciasse: pitcher.CSuciasse,
     CLimpiasse: pitcher.CLimpiasse,
@@ -48,15 +49,17 @@ updatePitcher(pitcher: Pitcher) {
 this.pitcherList.update(pitcher.$keyP, {
   nameP: pitcher.nameP,
   lastnameP: pitcher.lastnameP,
-  InPitch: pitcher.InPitchse,
-  hitsR: pitcher.hitsRse,
-  CSucias: pitcher.CSuciasse,
-  CLimpias: pitcher.CLimpiasse,
-  BBPerm: pitcher.BBPermse,
-  PonchR: pitcher.PonchRse
+  InPitchse: pitcher.InPitchse,
+  efectse: pitcher.efectse,
+  hitsRse: pitcher.hitsRse,
+  CSuciasse: pitcher.CSuciasse,
+  CLimpiasse: pitcher.CLimpiasse,
+  BBPermse: pitcher.BBPermse,
+  PonchRse: pitcher.PonchRse
 
 
 });
+
 
 }
 

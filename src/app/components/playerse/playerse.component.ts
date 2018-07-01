@@ -15,7 +15,7 @@ import { Player } from '../../models/player';
 })
 export class PlayerseComponent implements OnInit {
 
- 
+
 
   constructor(private playerseService: PlayerseService) { }
 
@@ -25,7 +25,7 @@ export class PlayerseComponent implements OnInit {
 
   }
   onSubmit(playerForm: NgForm) {
-    console.log(playerForm.value);
+    // console.log(playerForm.value);
    if (!playerForm.value.$key) {
      // console.log( "Insert" );
     this.playerseService.insertPlayer(playerForm.value);

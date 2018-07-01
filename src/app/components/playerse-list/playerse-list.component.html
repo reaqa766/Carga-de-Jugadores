@@ -3,18 +3,18 @@
       <input type="text" class="form-control mb-2" (input)="searchPlayer($event.target.value)" placeholder="Filtrar" id="search">
    <div *ngFor="let name of names">
     <h4>{{player?.name}}</h4>
-  
+
   </div>
   <!-- <div *ngIf="player?.length<1"></div>
   <hr>
   <p>No hay resultado</p>
     </div>
   </div> -->
-  
-  
-  
-  <div class="card">
-    <div class="card-body">
+
+
+
+  <div class="card" >
+    <div class="card-body" >
       <h6 class="text-center bg-dark text-white" style="padding-bottom:5px;">Lista de Jugadores</h6>
       <table class="table table-sm table-hover">
         <tbody>
@@ -22,6 +22,7 @@
             <th>Nombre</th>
             <th>Apellido</th>
             <th>VB</th>
+            <th>AVG</th>
             <th>CA</th>
             <th>H</th>
             <th>CE</th>
@@ -35,6 +36,7 @@
             <td>{{player.name}}</td>
             <td>{{player.lastname}}</td>
             <td>{{player.vecesbatese}}</td>
+            <td>{{player.avgse*1000 | number : '0.0-0'}}</td>
             <td>{{player.carrerasase}}</td>
             <td>{{player.hitsse}}</td>
             <td>{{player.carrerasese}}</td>
@@ -46,12 +48,12 @@
             <td><a  class="btn btn-danger text-white"  (click)="onDelete(player.$key)">
               <i class="fas fa-trash-alt"></i>
             </a></td>
-  
-  
+
+
           </ng-container>
           </tr>
         </tbody>
       </table>
     </div>
   </div>
-  
+

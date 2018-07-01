@@ -32,7 +32,7 @@ export class PitcherseComponent implements OnInit {
      // console.log( "Insert" );
     this.pitcherseService.insertPitcher(pitcherForm.value);
    } else {
-      // console.log("Update");
+       // console.log("Update");
       this.pitcherseService.updatePitcher(pitcherForm.value);
     }
     this.resetForm(pitcherForm);
