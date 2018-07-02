@@ -32,7 +32,13 @@ insertPitcher(pitcher: Pitcher) {
     CSucias: pitcher.CSucias,
     CLimpias: pitcher.CLimpias,
     BBPerm: pitcher.BBPerm,
-    PonchR: pitcher.PonchR
+    PonchR: pitcher.PonchR,
+    InPitchse: pitcher.InPitch,
+    hitsRse: pitcher.hitsR,
+    CSuciasse: pitcher.CSucias,
+    CLimpiasse: pitcher.CLimpias,
+    BBPermse: pitcher.BBPerm,
+    PonchRse: pitcher.PonchR
 
 
 
@@ -44,6 +50,24 @@ insertPitcher(pitcher: Pitcher) {
   });
 
 }
+
+updatePitcherse(pitcher: Pitcher) {
+ 
+  this.pitcherList.update(pitcher.$keyP, {
+    // name: player.name,
+    // lastname: player.lastname,
+    // average: player.avg,
+    InPitchse: pitcher.InPitch+pitcher.InPitchse,
+    hitsRse: pitcher.hitsR+pitcher.hitsRse,
+    CSuciasse: pitcher.CSucias+pitcher.CSuciasse,
+    CLimpiasse: pitcher.CLimpias+pitcher.CLimpiasse,
+    BBPermse: pitcher.BBPerm+pitcher.BBPermse,
+    PonchRse: pitcher.PonchR+pitcher.PonchRse
+
+
+});
+}
+
 
 updatePitcher(pitcher: Pitcher) {
 this.pitcherList.update(pitcher.$keyP, {

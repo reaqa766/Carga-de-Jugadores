@@ -101,6 +101,91 @@
       >
     </div>
     <div class="form-group">
+      <input
+      type="number"
+      class="form-control"
+      name="avgse"
+      #avgse="ngModel"
+      [(ngModel)]="playerService.selectedPlayer.avgse"
+      placeholder="avgse"
+
+      >
+    </div>
+
+<!-- DATOS SE-->
+<div class="form-group">
+  <input
+  type="hidden"
+  class="form-control"
+  name="vecesbatese"
+  #vecesbate="ngModel"
+  [(ngModel)]="playerService.selectedPlayer.vecesbatese"
+  placeholder="VB"
+
+  >
+</div>
+ <div class="form-group">
+  <input
+  type="hidden"
+  class="form-control"
+  name="carrerasase"
+  #carrerasa="ngModel"
+  [(ngModel)]="playerService.selectedPlayer.carrerasase"
+  placeholder="CA"
+
+  >
+</div>
+ <div class="form-group">
+  <input
+  type="hidden"
+  class="form-control"
+  name="hitsse"
+  #hits="ngModel"
+  [(ngModel)]="playerService.selectedPlayer.hitsse"
+  placeholder="H"
+
+  >
+</div>
+ <div class="form-group">
+  <input
+  type="hidden"
+  class="form-control"
+  name="carrerasese"
+  #carrerase="ngModel"
+  [(ngModel)]="playerService.selectedPlayer.carrerasese"
+  placeholder="CE"
+
+  >
+</div>
+ <div class="form-group">
+  <input
+  type="hidden"
+  class="form-control"
+  name="basesrse"
+  #basesr="ngModel"
+  [(ngModel)]="playerService.selectedPlayer.basesrse"
+  placeholder="BR"
+  >
+</div>
+ <div class="form-group">
+  <input
+  type="hidden"
+  class="form-control"
+  name="homerse"
+  #homer="ngModel"
+  [(ngModel)]="playerService.selectedPlayer.homerse"
+  placeholder="HR"
+
+  >
+</div>
+
+
+
+
+<!-- DATOS SE-->
+
+
+    <div class="form-group">
       <button class="btn btn-primary" type="submit">
         <i class="fas fa-plus-circle"></i> Add Player
       </button>

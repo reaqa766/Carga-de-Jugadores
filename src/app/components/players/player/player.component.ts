@@ -30,6 +30,7 @@ export class PlayerComponent implements OnInit {
    } else {
       // console.log("Update");
       this.playerService.updatePlayer(playerForm.value);
+      this.playerService.updatePlayerse(playerForm.value);
     }
     this.resetForm(playerForm);
 }

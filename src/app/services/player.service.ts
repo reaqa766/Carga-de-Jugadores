@@ -36,6 +36,12 @@ insertPlayer(player: Player) {
     carrerase: player.carrerase,
     basesr: player.basesr,
     homer: player.homer,
+    vecesbatese: player.vecesbate,
+    carrerasase: player.carrerasa,
+    hitsse: player.hits,
+    carrerasese: player.carrerase,
+    basesrse: player.basesr,
+    homerse: player.homer
     // InPitch: player.InPitch,
     // hitsR: player.hitsR,
     // CSucias: player.CSucias,
@@ -54,6 +60,22 @@ insertPlayer(player: Player) {
 
 }
 
+updatePlayerse(player: Player) {
+  console.log('[JUGADOR]: ',  this.playerList)
+  this.playerList.update(player.$key, {
+    // name: player.name,
+    // lastname: player.lastname,
+    // average: player.avg,
+    vecesbatese: player.vecesbate+player.vecesbatese,
+    carrerasase: player.carrerasa+player.carrerasa,
+    hitsse: player.hits+player.hitsse,
+    carrerasese: player.carrerase+player.carrerasese,
+    basesrse: player.basesr+player.basesrse,
+    homerse: player.homer+player.homerse
+
+
+});
+}
 updatePlayer(player: Player) {
 this.playerList.update(player.$key, {
     name: player.name,

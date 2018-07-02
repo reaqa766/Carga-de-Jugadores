@@ -4,7 +4,7 @@
   <div class="card mt-5">
     <div class="card-body">
       <form #pitcherForm="ngForm" (ngSubmit)="onSubmit(pitcherForm)">
-       <input type="hidden" name="$keyP" #$key="ngModel" [(ngModel)]="pitcherService.selectedPitcher.$keyP">
+       <input type="hidden" name="$keyP" #$keyP="ngModel" [(ngModel)]="pitcherService.selectedPitcher.$keyP">
         <div class="form-group">
         <input
         type="text"
@@ -103,6 +103,80 @@
 
         >
       </div>
+
+<!-- DATA PITCHERSE-->
+
+<div class="form-group">
+  <input
+  type="hidden"
+  class="form-control"
+  name="InPitchse"
+  #InPitch="ngModel"
+  [(ngModel)]="pitcherService.selectedPitcher.InPitchse"
+  placeholder="IP"
+
+  >
+</div>
+ <div class="form-group">
+  <input
+  type="hidden"
+  class="form-control"
+  name="hitsRse"
+  #hitsR="ngModel"
+  [(ngModel)]="pitcherService.selectedPitcher.hitsRse"
+  placeholder="H"
+
+  >
+</div>
+ <div class="form-group">
+  <input
+  type="hidden"
+  class="form-control"
+  name="CSuciasse"
+  #CSucias="ngModel"
+  [(ngModel)]="pitcherService.selectedPitcher.CSuciasse"
+  placeholder="CS"
+
+  >
+</div>
+ <div class="form-group">
+  <input
+  type="hidden"
+  class="form-control"
+  name="CLimpiasse"
+  #CLimpias="ngModel"
+  [(ngModel)]="pitcherService.selectedPitcher.CLimpiasse"
+  placeholder="CL"
+
+  >
+</div>
+ <div class="form-group">
+  <input
+  type="hidden"
+  class="form-control"
+  name="BBPermse"
+  #BBPerm="ngModel"
+  [(ngModel)]="pitcherService.selectedPitcher.BBPermse"
+  placeholder="BB"
+  >
+</div>
+ <div class="form-group">
+  <input
+  type="hidden"
+  class="form-control"
+  name="PonchRse"
+  #PonchR="ngModel"
+  [(ngModel)]="pitcherService.selectedPitcher.PonchRse"
+  placeholder="PO"
+
+  >
+ </div>
+
+
+
+<!--DATA PITCHERSE-->
+
+
       <div class="form-group">
         <button class="btn btn-primary" type="submit">
           <i class="fas fa-plus-circle"></i> Add Pitcher

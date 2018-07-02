@@ -34,6 +34,7 @@ export class PitcherComponent implements OnInit {
    } else {
       // console.log("Update");
       this.pitcherService.updatePitcher(pitcherForm.value);
+      this.pitcherService.updatePitcherse(pitcherForm.value);
     }
     this.resetForm(pitcherForm);
 }
